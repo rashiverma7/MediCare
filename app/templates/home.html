@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+		<div id = "mainpage">
+			<img src="{{ url_for('static', filename='img/medilogo.png') }}" alt="Quora_logo">
+			<h4>Medical Store Management System</h4>
+		</div>
+		<!-- Button to open the modal-->
+
+		<div class="button" id="signin" onclick="document.getElementById('id02').style.display='block'"><span>Sign In</span></div>
+
+
+
+
+		<!-- The modal sign up form -->
+		<div id='id02' class='modal'>
+			<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<form class="modal-content animate" action="/action_page.php">
+				<div class="container">
+				<label><b>Username</b></label>
+				<input type="text" placeholder="Enter username" name="email" required>
+
+				<label><b>Password</b></label>
+				<input type="password" placeholder="Enter password" name="psw" required>
+
+				<input type="checkbox" checked="checked">Remember me
+
+				<div class="clearfix">
+				<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+				<button type="submit" class="signinbtn"><a href="rashipage2.html">Sign In</a></button>
+
+
+
+
+				</div>
+			</div>
+			</form>
+			</div>
+
+
+
+
+
+{% endblock %}
