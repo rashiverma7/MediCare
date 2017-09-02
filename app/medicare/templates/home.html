@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+		<div id = "mainpage">
+			<img src="{{ url_for('static', filename='img/medilogo.png') }}" alt="Quora_logo">
+			<h4>Medical Store Management System</h4>
+		</div>
+		<!-- Button to open the modal-->
+
+		<div class="button" id="signin" onclick="document.getElementById('id01').style.display='block'"><span>Sign In</span></div>
+
+
+		<!-- The modal sign up form -->
+
+
+
+
+
+
+{% endblock %}
